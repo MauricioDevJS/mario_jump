@@ -47,20 +47,20 @@
     }
 }
 
-@keyframes jump{
-    0%{
+@keyframes jump {
+    0% {
         bottom: 0;
     }
-    40%{
+    40% {
         bottom: 180px;
     }
-    50%{
-        bottom: 180%;
+    50% {
+        bottom: 150px;
     }
-    60%{
-        bottom: 180%;
+    60% {
+        bottom: 150px;
     }
-    100%{
+    100% {
         bottom: 0;
     }
 }

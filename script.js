@@ -30,4 +30,12 @@ const loop = setInterval(() => {
     }
 }, 10);
 
-document.addEventListener("keydown", jump);
+// Verificar se o dispositivo suporta eventos de toque
+const supportsTouch = "ontouchstart" in window || navigator.msMaxTouchPoints;
+
+// Adicionar event listener apropriado com base no suporte a toque
+if (supportsTouch) {
+    document.addEventListener("touchstart", jump);
+} else {
+    document.addEventListener("keydown", jump);
+}
